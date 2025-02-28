@@ -139,11 +139,6 @@ To check for possible memory leaks, run:
 ```bash
 valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ws
 ```
-
----
-
-Here’s your **proofread version** with corrections for grammar, clarity, and consistency:
-
 ---
 
 ## Project Implementation Notes: **Very Important, Read Carefully**  
