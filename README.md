@@ -9,7 +9,7 @@ In this project, you will build an application that enables waiters to take cust
 | Milestone | Revision | Comments | Walkthrough |
 |-----------|:--------:|:--------:|:-----------:|
 | [MS1](#milestone-1) | V1.0 | | |
-| [MS2](#milestone-2) | | | |
+| [MS2](#milestone-2) | V1.0 | | |
 | [MS3](#milestone-3) | | | |
 | [MS4](#milestone-4) |  | | |
 | [MS5](#milestone-5-the-final-milestone) |  | | |
@@ -128,10 +128,10 @@ All code must be compiled using the following command on **Matrix**:
 g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
 ```
 
-- `-Wall` → Reports all warnings.  
-- `-std=c++11` → Uses the C++11 standard.  
-- `-g` → Includes debugging symbols for better `valgrind` reports.  
-- `-o ws` → Names the compiled application `ws`.  
+- `-Wall`: Reports all warnings.  
+- `-std=c++11`: Uses the C++11 standard.  
+- `-g`: Includes debugging symbols for better `valgrind` reports.  
+- `-o ws`: Names the compiled application `ws`.  
 
 ### **Checking for Memory Leaks**
 To check for possible memory leaks, run:
