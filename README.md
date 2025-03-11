@@ -8,7 +8,7 @@ In this project, you will build an application that enables waiters to take cust
 
 | Milestone | Revision | Comments | Walkthrough |
 |-----------|:--------:|:--------:|:-----------:|
-| [MS1](#milestone-1) | V1.0 | | |
+| [MS1](#milestone-1) | V1.0 | | [video](https://youtu.be/lqJI57TdSpA) |
 | [MS2](#milestone-2) | V1.0 | | |
 | [MS3](#milestone-3) | | | |
 | [MS4](#milestone-4) |  | | |
