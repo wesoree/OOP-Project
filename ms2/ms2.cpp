@@ -1,16 +1,15 @@
 /***********************************************************************
-// OOP244 Project, milestone 1 : Lab tester program
+// OOP244 Project, milestone 2 : tester program
 //
-// File	ms1.cpp
-// Version 1.0
-// Date 2024-9-11
+// File	ms2.cpp
+// Version 1.1
 // Author Fardad
 // Description
 //
 // Revision History
 // -----------------------------------------------------------
 // Name            Date            Reason
-//
+// 1.1             03-12           fixed switch bug and insertion typo
 /////////////////////////////////////////////////////////////////
 ***********************************************************************/
 #include <iostream>
@@ -62,7 +61,7 @@ void test2() {
    Menu test2("Test 2, Selection test", "Return", 1);
    Menu subMenu(nullptr, "Back to test 2", 2, 4);
    test2 << "Option 1" << "Option 2 with Submenu" << "Option 3";
-   subMenu << "Sub-option 1", "Sub-option 2";
+   subMenu << "Sub-option 1" << "Sub-option 2";
    do {
       selection = test2.select();
       switch (selection) {
@@ -76,6 +75,7 @@ void test2() {
          break;
       case 3:
          cout << "Option three selected." << endl;
+      case 0:
          break;
       default:
          cout << "This should never happen!" << endl;
