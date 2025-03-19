@@ -10,7 +10,7 @@ In this project, you will build an application that enables waiters to take cust
 |-----------|:--------:|:--------:|:-----------:|
 | [MS1](#milestone-1) | V1.0 | | [video](https://youtu.be/lqJI57TdSpA) |
 | [MS2](#milestone-2) | V1.1 | ms2.cpp had a typo and it is fixed | [video](https://youtu.be/lymXEXn6eh0) |
-| [MS3](#milestone-3) | V1.0 | | |
+| [MS3](#milestone-3) | V1.0 | | [video](https://youtu.be/P5y-vpk37mU)|
 | [MS4](#milestone-4) | V0.9 | | |
 | [MS5](#milestone-5-the-final-milestone) | V0.9 | | |
 
