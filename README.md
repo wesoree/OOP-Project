@@ -1353,10 +1353,6 @@ The program should continue prompting the user until a valid integer within the 
 
 ## MS51 Submission  
 
-**List Food and Drink**  
-
-> :warning: **IMPORTANT:** In Milestone 4, the `listDrinks()` method in the `Ordering` class was mistakenly written as `"ListDrinks()"` with an uppercase "L". This typo has been corrected in Milestone 5. Before submission, **rename it to `listDrinks` with a lowercase "L"**.  
-
 ---
 
 ### MS51 Tester Program  
