@@ -42,7 +42,7 @@ int main() {
    cout << "Testing list foods.................................." << endl;
    ord.listFoods();
    cout << "Testing list drinks................................." << endl;
-   ord.ListDrinks();
+   ord.listDrinks();
 
    cout << "Testing order food.................................."
            "\nEnter:\n 1\n 1\n abc\n ---->" << endl;
