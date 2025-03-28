@@ -11,8 +11,8 @@ In this project, you will build an application that enables waiters to take cust
 | [MS1](#milestone-1) | V1.0 | | [video](https://youtu.be/lqJI57TdSpA) |
 | [MS2](#milestone-2) | V1.1 | ms2.cpp had a typo and it is fixed | [video](https://youtu.be/lymXEXn6eh0) |
 | [MS3](#milestone-3) | V1.0 | | [video](https://youtu.be/P5y-vpk37mU)|
-| [MS4](#milestone-4) | V0.9 | | |
-| [MS5](#milestone-5-the-final-milestone) | V0.9 | | |
+| [MS4](#milestone-4) | V1.0 | Fixed bugs, updated makeBillFileName| |
+| [MS5](#milestone-5-the-final-milestone) | V1.0 | | |
 
 For this project, you will develop an application that enables waiters to take customer orders for food and drinks and generate a bill upon order completion.
 
@@ -839,36 +839,34 @@ The `Ordering` module includes attributes to track the number of food and drink 
 > **Note:**  
 Use the following function, `makeBillFileName` and add it to the `Utils` module to generate unique file names. This function receives a bill number and creates a file name in the format `bill_[billNo].txt`.   
 ```cpp
-char* makeBillFileName(char* filename, size_t billNo) {
-   size_t temp = billNo;
-   int cnt = 5, i = 0;
-   int length = 0;
-   // set name prefix
-   while ("bill_"[i]) {
-      filename[i] = "bill_"[i++];
-   }
-   // Calculate the number of digits
-   do {
-      cnt++;
-      temp /= 10;
-   } while (temp > 0);
-   length = cnt;
-   // Convert each digit to character from the end
-   while (billNo > 0) {
-      filename[--cnt] = (billNo % 10) + '0';
-      billNo /= 10;
-   }
-   // Handle the case when billNo is 0
-   if (!billNo) {
-      filename[--cnt] = '0';
-   }
-   // Attach .txt to the end of the file name
-   for (i = 0; ".txt"[i]; i++) {
-      filename[length++] = ".txt"[i];
-   }
-   filename[length] = '\0';
-   return filename;
-}
+ char* Utils::makeBillFileName(char* filename, size_t billNo)const {
+    char billFileName[21] = "bill_";
+    size_t temp = billNo;
+    int cnt = 5;
+    int length;
+    // Calculate the number of digits
+    do {
+       cnt++;
+       temp /= 10;
+    } while (temp > 0);
+    length = cnt;
+    // Convert each digit to character from the end
+    while (billNo > 0) {
+       billFileName[--cnt] = (billNo % 10) + '0';
+       billNo /= 10;
+    }
+    // Handle the case when billNo is 0
+    if (billFileName[cnt - 1] == '\0') {
+       billFileName[--cnt] = '0';
+    }
+    // Attach .txt to the end of the file name
+    for (int i = 0; ".txt"[i]; i++) {
+       billFileName[length++] = ".txt"[i];
+    }
+    billFileName[length] = '\0';
+    strcpy(filename, billFileName);
+    return filename;
+ }
 
 ```
 ---
