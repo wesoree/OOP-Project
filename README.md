@@ -12,7 +12,7 @@ In this project, you will build an application that enables waiters to take cust
 | [MS2](#milestone-2) | V1.1 | ms2.cpp had a typo and it is fixed | [video](https://youtu.be/lymXEXn6eh0) |
 | [MS3](#milestone-3) | V1.0 | | [video](https://youtu.be/P5y-vpk37mU)|
 | [MS4](#milestone-4) | V1.0 | Fixed bugs, updated makeBillFileName| |
-| [MS5](#milestone-5-the-final-milestone) | V1.0 | | |
+| [MS5](#milestone-5-the-final-milestone) | V1.1 | | Added ms56.cpp tester for m56 submission|
 
 For this project, you will develop an application that enables waiters to take customer orders for food and drinks and generate a bill upon order completion.
 
@@ -1783,7 +1783,7 @@ To submit your work:
 
 ### MS56 Tester Program  
 
-**No tester program**; use your own `main.cpp`.  
+[ms56.cpp](prj/ms56.cpp)
 
 ---
 
