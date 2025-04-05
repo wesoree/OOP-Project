@@ -82,7 +82,7 @@ Final Project Milestone ?
 Module: Whatever
 Filename: Whatever.cpp
 Version 1.0
-Author: John Doe
+Author: John Doe, StNo: 123123123, Email: jdoe@myseneca.ca
 Revision History
 -----------------------------------------------------------
 Date      Reason
