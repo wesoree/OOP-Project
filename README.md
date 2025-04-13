@@ -56,7 +56,7 @@ If you require feedback on any of the first four milestones, you must request it
 ### **Submission Rejection Date: April 15**  
 
 **NOTE:**  
-- Your **entire project will receive a mark of zero** if **any of the first four milestones are not submitted** by the rejection date.  
+- Your **entire project will not receive a mark and is considered incomplete** if **any of the first four milestones are not submitted** by the rejection date.  
 - For your project to be marked, you must submit **all four milestones** and at least **one of the six submissions** of Milestone 5 **before the rejection date**.  
 
 ---
