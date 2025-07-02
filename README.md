@@ -27,10 +27,10 @@ This project consists of **five milestones**, each with a **specific due date**.
 
 | Milestone | Mark | Due Date | Submission Policy |
 |:---------:|:----:|:--------:|------------------|
-| MS1 | 10% | Jul 7 | Mandatory to submit by Apr 15.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
-| MS2 | 10% | Jul 12 | Mandatory to submit by Apr 15.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
-| MS3 | 10% | Jul 22 | Mandatory to submit by Apr 15.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
-| MS4 | 10% | Jul 28 | Mandatory to submit by Apr 15.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
+| MS1 | 10% | Jul 7 | Mandatory to submit by Aug 9th.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
+| MS2 | 10% | Jul 12 | Mandatory to submit by Aug 9th.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
+| MS3 | 10% | Jul 22 | Mandatory to submit by Aug 9th.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
+| MS4 | 10% | Jul 28 | Mandatory to submit by Aug 9th.<br>Full marks awarded if submitted within one week late. **0% after the due date.** |
 | MS5 | 60% | Aug 04 | See details below. |
 
 > To facilitate the final project submission and allow partial submissions, **Milestone 5** is divided into **six smaller submissions**. Each submission is worth **10% of the project mark**.  
