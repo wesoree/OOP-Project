@@ -1,9 +1,31 @@
-#pragma warning(disable:4996)
 #include "Menu.h"
 #include <cstring>
-#include <cctype>
+#include "utils.h" //not going to use <cctype> since utils.h doesn't require me to use that warning pragma
 #include <algorithm>
 #include <iostream>
+
+//---------------------------OOP244 PROJECT CITATION---------------------------------------
+/******************************************************************************************
+* Name: Wesley Lo
+* Number: 103835245
+* Email: wlo32@myseneca.ca
+* Course: OOP244
+* Section: NEE
+* Prof: Asam Gulaid
+* Version: 2.0
+* Date: 7/22/25
+* Milestone: 1
+* Version History:
+* 7/22/25 - Final submission prep
+* 7/21/25 - Added a better function by splitting up the words before removing whitespace
+* 7/18/25 - Adjust output
+* 7/15/25 - Preliminary submission prep
+* -----------------------------------------------------------------------------------------
+* I have written all the code using what the prof provided
+* other than Line 85 to 97, which was by Arafat Hasan on Stackoverflow, sourced from:
+* https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
+*******************************************************************************************/
+//--------------------------------END OF CITATION-------------------------------------------
 
 using namespace std;
 
@@ -56,7 +78,7 @@ namespace seneca {
 		return content != "";
 	}
 	string tostring(const char* cs) {
-		if (cs == NULL) return "";
+		if (cs == NULL) return ""; 
 		string s(cs);
 		return s;
 	}
