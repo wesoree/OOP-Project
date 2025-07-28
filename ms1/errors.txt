@@ -1,29 +1,17 @@
 Menu.cpp: In constructor ‘seneca::MenuItem::MenuItem(const char*, size_t, size_t, int)’:
-Menu.cpp:39:69: error: no matching function for call to ‘isspace()’
-     temp[i].erase(remove_if(temp[i].begin(), temp[i].end(), isspace()), temp[i].end()); //produce 
-                                                                     ^
-Menu.cpp:39:69: note: candidates are:
-In file included from /usr/include/c++/4.8.2/cctype:42:0,
-                 from /usr/include/c++/4.8.2/bits/localefwd.h:42,
-                 from /usr/include/c++/4.8.2/string:43,
-                 from Menu.h:2,
-                 from Menu.cpp:2:
-/usr/include/ctype.h:119:1: note: int isspace(int)
- __exctype (isspace);
- ^
-/usr/include/ctype.h:119:1: note:   candidate expects 1 argument, 0 provided
-In file included from /usr/include/c++/4.8.2/bits/basic_ios.h:37:0,
-                 from /usr/include/c++/4.8.2/ios:44,
-                 from /usr/include/c++/4.8.2/ostream:38,
-                 from /usr/include/c++/4.8.2/iostream:39,
-                 from Menu.cpp:6:
-/usr/include/c++/4.8.2/bits/locale_facets.h:2530:5: note: template<class _CharT> bool std::isspace(_CharT, const std::locale&)
-     isspace(_CharT __c, const locale& __loc)
+Menu.cpp:39:68: error: no matching function for call to ‘remove_if(std::basic_string<char>::iterator, std::basic_string<char>::iterator, <unresolved overloaded function type>)’
+     temp[i].erase(remove_if(temp[i].begin(), temp[i].end(), isspace), temp[i].end()); //produce 
+                                                                    ^
+Menu.cpp:39:68: note: candidate is:
+In file included from /usr/include/c++/4.8.2/algorithm:62:0,
+                 from Menu.cpp:5:
+/usr/include/c++/4.8.2/bits/stl_algo.h:1134:5: note: template<class _FIter, class _Predicate> _FIter std::remove_if(_FIter, _FIter, _Predicate)
+     remove_if(_ForwardIterator __first, _ForwardIterator __last,
      ^
-/usr/include/c++/4.8.2/bits/locale_facets.h:2530:5: note:   template argument deduction/substitution failed:
-Menu.cpp:39:69: note:   candidate expects 2 arguments, 0 provided
-     temp[i].erase(remove_if(temp[i].begin(), temp[i].end(), isspace()), temp[i].end()); //produce 
-                                                                     ^
+/usr/include/c++/4.8.2/bits/stl_algo.h:1134:5: note:   template argument deduction/substitution failed:
+Menu.cpp:39:68: note:   couldn't deduce template parameter ‘_Predicate’
+     temp[i].erase(remove_if(temp[i].begin(), temp[i].end(), isspace), temp[i].end()); //produce 
+                                                                    ^
 Menu.cpp: In member function ‘std::ostream& seneca::MenuItem::display() const’:
 Menu.cpp:63:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int j = 0; j < msize; j++) {

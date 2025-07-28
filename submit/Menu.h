@@ -18,5 +18,7 @@ namespace seneca {
 		operator bool()const;
 	};
 	string tostring(const char* cs);
-	vector<string> split(string src, string delim);
+	string removeWhitespace(string s);
+	string removeWhitespace(const char* src);
+	vector<string> stdstrtok(string s, const string delim);
 }

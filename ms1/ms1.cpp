@@ -29,7 +29,6 @@ int main() {
    for (size_t row = 0; row < 11; row+=5) {
       for (size_t i = 0; i < 5; i++) {
          MenuItem(" \t\v\r\f\nThe Menu Item", i, i + 1, int(row + i)-1).display() << endl;
-         
       }
    }
    return 0;
